@@ -1,16 +1,165 @@
 /* Type your code here */
 
+body {
+    background-image: url("./assets/background-image1.png");
+    background-repeat: no-repeat;
+    background-size: 1500px 612px;
+}
 
-/* change the font family and spacing as per your project font */
-.footer{
-    display:flex;
-    flex-direction: row;
-    align-content: flex-end;
-	position: relative;
-	top: 750px;
-	margin-left: 80px;
-	font-size: 18px;
-	font-family: Nunito Sans;
-    font-style: normal;
-    
+.heading,
+.score {
+    padding: 5px;
+    margin: 5px;
+}
+
+h4 {
+    font-size: 25px;
+    color: rgb(107, 106, 106);
+}
+
+.logo {
+    text-align: right;
+}
+
+h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+    text-shadow: 2px 1px grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+
+h4 {
+    margin: 4px;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: white;
+    font-weight: bold;
+    width: 910px;
+    border: 1px solid rgb(209, 208, 208);
+}
+
+tr {
+    padding: 7px 0px;
+    margin: 0px;
+}
+
+th {
+    text-align: left;
+}
+
+th,
+td {
+    border-bottom: 1px solid #ddd;
+    padding: 6px 0px;
+}
+
+#r {
+    text-align: center;
+    width: 4%;
+}
+
+#i {
+    color: white;
+}
+
+.inning {
+    background-color: rgb(245, 65, 65);
+}
+
+.bt {
+    background-color: rgb(235, 232, 232);
+}
+
+.n1 {
+    color: rgb(141, 141, 250);
+}
+
+#c1 {
+    color: rgb(100, 100, 100);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover {
+    color: #06D85F;
+}
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+
+@media screen and (max-width: 700px) {
+    .box {
+        width: 70%;
+    }
+    .popup {
+        width: 70%;
+    }
+}
+
+#im {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    text-decoration: none;
+    color: blue;
+}
+
+a:active {
+    text-decoration: none;
+    color: blue;
 }
